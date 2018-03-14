@@ -42,11 +42,3 @@ https://hacks.mozilla.org/2016/03/build-the-virtual-reality-web-with-a-frame/
 # Howto: Custom Marker
 
 https://jeromeetienne.github.io/AR.js/three.js/examples/marker-training/examples/generator.html
-
-# People
-
-Akosia - manager - 571
-Sarah - artist - ??
-
-
-
