@@ -10,9 +10,6 @@
   <script>THREEx.ArToolkitContext.baseURL = './lib/'</script>
 </head>
 <body style='margin : 0px; overflow: hidden; font-family: Monospace;'><div style='position: absolute; top: 10px; width:100%; text-align: center; z-index: 1;'>
-  <a href="https://github.com/jeromeetienne/AR.js/" target="_blank">AR.js</a> - three.js mobile performance
-  <br/>
-  Contact me any time at <a href='https://twitter.com/jerome_etienne' target='_blank'>@jerome_etienne</a>
 </div><script>
   //////////////////////////////////////////////////////////////////////////////////
   //    Init
@@ -86,7 +83,7 @@
   var arToolkitContext = new THREEx.ArToolkitContext({
     cameraParametersUrl: THREEx.ArToolkitContext.baseURL + '../data/data/camera_para.dat',
     detectionMode: 'mono',
-    maxDetectionRate: 30,
+    maxDetectionRate: 24,
     canvasWidth: 80*3,
     canvasHeight: 60*3,
   })
@@ -112,7 +109,8 @@
   scene.add(markerRoot)
   var artoolkitMarker = new THREEx.ArMarkerControls(arToolkitContext, markerRoot, {
     type : 'pattern',
-    patternUrl : THREEx.ArToolkitContext.baseURL + '../data/data/patt.hiro'
+    //patternUrl : THREEx.ArToolkitContext.baseURL + '../data/data/patt.hiro'
+    patternUrl : THREEx.ArToolkitContext.baseURL + '../data/data/marker-a.patt'
     // patternUrl : THREEx.ArToolkitContext.baseURL + '../data/data/patt.kanji'
   })
 
@@ -179,5 +177,14 @@
       onRenderFct(deltaMsec/1000, nowMsec/1000)
     })
   })
-</script></body>
+</script>
+
+<a-scene embedded arjs>
+<a-marker preset="hiro">
+        <a-box position='0 0.5 0' material='color: black;'></a-box>
+</a-marker>
+<a-entity camera></a-entity>
+</a-scene>
+
+</body>
 </html>

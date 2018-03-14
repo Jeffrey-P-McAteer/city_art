@@ -36,10 +36,14 @@ QR codes should have an optional location query parameter which the server will 
 https://medium.com/arjs/augmented-reality-in-10-lines-of-html-4e193ea9fdbf
 https://github.com/jeromeetienne/AR.js
 
-#
+# Howto: Custom Marker
+
+https://jeromeetienne.github.io/AR.js/three.js/examples/marker-training/examples/generator.html
+
+# People
 
 Akosia - manager - 571
-Sarah - artist - 
+Sarah - artist - ??
 
 
 
