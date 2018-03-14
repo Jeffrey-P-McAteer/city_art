@@ -35,6 +35,9 @@ QR codes should have an optional location query parameter which the server will 
 
 https://medium.com/arjs/augmented-reality-in-10-lines-of-html-4e193ea9fdbf
 https://github.com/jeromeetienne/AR.js
+https://aframe.io/blog/arjs/
+
+https://hacks.mozilla.org/2016/03/build-the-virtual-reality-web-with-a-frame/
 
 # Howto: Custom Marker
 
